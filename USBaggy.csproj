@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38F565F0-D254-9A3A-27AA-2C41052BFD12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>WebGL:20</UnityBuildTarget>
+    <UnityVersion>2018.1.0f2</UnityVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_0;UNITY_2018_1;UNITY_2018;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;PLAYMAKER;PLAYMAKER_1_8;PLAYMAKER_1_8_9;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;ECOSYSTEM;ECOSYSTEM_0_6;ECOSYSTEM_0_6_OR_NEWER;PLAYMAKER_UTILS</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_0;UNITY_2018_1;UNITY_2018;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;PLAYMAKER;PLAYMAKER_1_8;PLAYMAKER_1_8_9;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;ECOSYSTEM;ECOSYSTEM_0_6;ECOSYSTEM_0_6_OR_NEWER;PLAYMAKER_UTILS</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Managed/UnityEngine/UnityEngine">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.AIModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ARModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.AccessibilityModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.AnimationModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.AssetBundleModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.AudioModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.BaselibModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ClothModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.CloudWebServicesModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.CoreModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.CrashReportingModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.DirectorModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.FacebookModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.GameCenterModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.GridModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.HotReloadModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.IMGUIModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ImageConversionModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.InputModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.JSONSerializeModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ParticleSystemModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ParticlesLegacyModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.PerformanceReportingModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.PhysicsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.Physics2DModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.ScreenCaptureModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SharedInternalsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SpatialTrackingModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SpriteMaskModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SpriteShapeModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.StyleSheetsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SubstanceModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TLSModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TerrainModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TerrainPhysicsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TextRenderingModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TilemapModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.TimelineModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UIModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UIElementsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UNETModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UmbraModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityAnalyticsModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityConnectModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityWebRequestModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.VRModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.VehiclesModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.VideoModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.WebModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGLSupport/Managed/UnityEngine.WebGLModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.WindModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.XRModule">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/UnityEditor">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Managed/Unity.Locator">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>J:/Unity/2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+      <HintPath>Assets/3rdPartyAssets/PlayMaker/ConditionalExpression.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>Assets/3rdPartyAssets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Editor">
+      <HintPath>Assets/3rdPartyAssets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>Assets/3rdPartyAssets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/digim/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/digim/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/digim/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>J:\Unity\2018.1.0f2\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityEditor.StandardEvents.csproj">
+      <Project>{6800202F-4402-D405-F8CB-03DC7BD78B92}</Project>
+      <Name>UnityEditor.StandardEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
+      <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
+      <Name>Unity.PackageManagerUI.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\3rdPartyAssets\iTween\iTween.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiCanvasRaycastFilterEventsProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiComponentProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiDragEventsExecutionProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiDragEventsProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiDropEventsProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiPointerEventsProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker uGui\Proxies\PlayMakerUGuiSceneProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Actions\MonoBehaviour\TransformEventsBridge.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Components\Comment.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Event Properties\Actions\GetEventProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Event Properties\Actions\SetEventProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Extensions\PlayMakerUtils_extensions.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Internal\PlayMakerUtilsDotNetExtensions.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils_conversions.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils_Events.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils_Fsm.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils_FsmVar.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PlayMakerUtils_Serialization.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\ButtonAttribute\ButtonAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\EventTargetVariableAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\ExpectComponentAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\FsmVariableTargetVariableAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\FsmVariableTypeAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\RequiredAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\GenericAttributes\ShowOptionsAttribute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\MainCameraTarget\MainCameraTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\Owner\OwnerClass.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerEvent\PlayMakerEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerEventTarget\PlayMakerEventTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerFsmTarget\PlayMakerFsmTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerFsmVariable\PlayMakerFsmVariable.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerFsmVariableTarget\PlayMakerFsmVariableTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\PropertyDrawers\PlayMakerTimelineEventTarget\PlayMakerTimelineEventTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Wizards\LinkerWizard\LinkerData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker Utils\Wizards\PlayMakerEventProxy\PlayMakerEventProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateFloatV2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateFsmAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateRect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\AnimateVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\CurveColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\CurveFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\CurveFsmAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\CurveRect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\CurveVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\EaseColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\EaseFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\EaseFsmAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\EaseRect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\AnimateVariables\EaseVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\AddAnimationClip.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\AddMixingTransform.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\AnimationSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\BaseAnimationAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\BlendAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\CapturePoseAsAnimationClip.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\EnableAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\PlayAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\PlayRandomAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\RemoveMixingTransform.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\RewindAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\SetAnimationSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\SetAnimationTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\SetAnimationWeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animation\StopAnimation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorCrossFade.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorInterruptMatchTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorMatchTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorPlay.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorStartPlayback.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorStartRecording.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorStopPlayback.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\AnimatorStopRecording.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\BaseClasses\AnimatorFrameUpdateSelector.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorApplyRootMotion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorBody.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorBoneGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCullingMode.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentStateInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentStateInfoIsName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentStateInfoIsTag.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentTransitionInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentTransitionInfoIsName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorCurrentTransitionInfoIsUserName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorDelta.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorFeetPivotActive.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorGravityWeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorHumanScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorIKGoal.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorIsHuman.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorIsLayerInTransition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorIsMatchingTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorIsParameterControlledByCurve.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorLayerCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorLayerName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorLayersAffectMassCenter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorLayerWeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorLeftFootBottomHeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorNextStateInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorPivot.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorPlayBackSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorPlaybackTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorRightFootBottomHeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorRoot.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\GetAnimatorTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\NavMeshAgentAnimatorSynchronizer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorApplyRootMotion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorBody.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorCullingMode.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorFeetPivotActive.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorIKGoal.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorLayersAffectMassCenter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorLayerWeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorLookAt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorPlayBackSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorPlaybackTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorStabilizeFeet.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Animator\SetAnimatorTrigger.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Application\ApplicationQuit.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Application\ApplicationRunInBackground.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Application\GetScreenHeight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Application\GetScreenWidth.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Application\TakeScreenshot.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayAddRange.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayClear.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayContains.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayDeleteAt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayForEach.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayGet.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayGetNext.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayGetRandom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayLength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayResize.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayReverse.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArraySet.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayShuffle.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArraySort.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\ArrayTransferValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\FsmArraySet.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\GetFsmArray.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\GetFsmArrayItem.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\SetFsmArray.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Array\SetFsmArrayItem.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\AudioMute.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\AudioPause.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\AudioPlay.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\AudioStop.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\PlayRandomSound.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\PlaySound.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\SetAudioClip.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\SetAudioLoop.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\SetAudioPitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\SetAudioVolume.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Audio\SetGameVolume.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\CameraFadeIn.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\CameraFadeOut.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\CutToCamera.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\GetMainCamera.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\ScreenToWorldPoint.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\SetBackgroundColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\SetCameraCullingMask.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\SetCameraFOV.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\SetMainCamera.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Camera\WorldToScreenPoint.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\ControllerIsGrounded.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\ControllerMove.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\ControllerSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\ControllerSimpleMove.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\GetControllerCollisionFlags.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Character\GetControllerHitInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\ColorInterpolate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\ColorRamp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\GetColorRGBA.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\SelectRandomColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\SetColorRGBA.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Color\SetColorValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ComponentAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertBoolToColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertBoolToFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertBoolToInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertBoolToString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertEnumToString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertFloatToInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertFloatToString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertIntToFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertIntToString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertMaterialToObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertSecondsToString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Convert\ConvertStringToInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\Assert.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\BaseLogAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\Comment.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugDrawShape.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugEnum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugFsmVariable.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugLog.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DebugVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DrawDebugLine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DrawDebugRay.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Debug\DrawStateLabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\DetectDeviceOrientation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\DeviceOrientationEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\DevicePlayFullScreenMovie.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\DeviceShakeEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\DeviceVibrate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetDeviceAcceleration.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetDeviceRoll.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetIPhoneSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetLocationInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetTouchCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\GetTouchInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\ProjectLocationToMap.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\StartLocationServiceUpdates.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\StopLocationServiceUpdates.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\SwipeGestureEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\TouchEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\TouchGUIEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Device\TouchObjectEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Effects\Blink.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Effects\Flicker.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Enum\SetEnumValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\ActivateGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\AddComponent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\CreateEmptyObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\CreateObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\DestroyComponent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\DestroyObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\DestroyObjects.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\DestroySelf.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\DetachChildren.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\FindChild.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\FindClosest.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\FindGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetChild.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetChildCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetChildNum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetDistance.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetLayer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetNextChild.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetOwner.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetParent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetRandomChild.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetRandomObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetRoot.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetTag.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetTagCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\GetTransform.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\HasComponent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SelectRandomGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetLayer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetParent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetTag.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GameObject\SetTagsOnChildren.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\DrawFullscreenColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\DrawTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\EnableGUI.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIBox.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIContentAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIElementHitTest.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIHorizontalSlider.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUILabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUITooltip.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\GUIVerticalSlider.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\ResetGUIMatrix.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\RotateGUI.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\ScaleGUI.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUIAlpha.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUIBackgroundColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUIColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUIContentColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUIDepth.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetGUISkin.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUI\SetMouseCursor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUIElement\SetGUIText.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUIElement\SetGUITexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUIElement\SetGUITextureAlpha.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUIElement\SetGUITextureColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginArea.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginAreaFollowObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginCentered.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginHorizontal.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginScrollView.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBeginVertical.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutBox.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutConfirmPasswordField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEmailField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEndArea.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEndCentered.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEndHorizontal.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEndScrollView.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutEndVertical.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutFlexibleSpace.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutFloatField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutFloatLabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutHorizontalSlider.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutIntField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutIntLabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutLabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutPasswordField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutRepeatButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutSelectionGrid.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutSpace.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutTextField.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutTextLabel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutToggle.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutToolbar.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\GUILayoutVerticalSlider.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\GUILayout\UseGUILayout.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\AnyKey.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetAxis.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetAxisVector.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetButtonDown.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetButtonUp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetKey.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetKeyDown.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetKeyUp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetMouseButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetMouseButtonDown.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetMouseButtonUp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetMouseX.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\GetMouseY.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\MouseLook.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\MouseLook2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\MousePick.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\MousePickEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\ResetInputAxes.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\ScreenPick.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Input\TransformInputToWorldSpace.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\Include\iTweenFSMEvents.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenFsmAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenLookFrom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenLookTo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenLookUpdate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenMoveAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenMoveBy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenMoveFrom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenMoveTo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenMoveUpdate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenPause.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenPunchPosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenPunchRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenPunchScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenResume.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenRotateAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenRotateBy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenRotateFrom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenRotateTo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenRotateUpdate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenScaleAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenScaleBy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenScaleFrom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenScaleTo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenScaleUpdate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenShakePosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenShakeRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\iTween\iTweenStop.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Level\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Level\LoadLevel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Level\LoadLevelNum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Level\RestartLevel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightCookie.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightFlare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightIntensity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightRange.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightSpotAngle.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetLightType.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Lights\SetShadowStrength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolAllTrue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolAnyTrue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolChanged.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolNoneTrue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolOperator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\BoolTest.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\EnumCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\EnumSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FloatChanged.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FloatCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FloatSignTest.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FloatSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FsmStateSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\FsmStateTest.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectChanged.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectCompareTag.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectHasChildren.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectIsChildOf.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectIsNull.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectIsVisible.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\GameObjectTagSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\IntChanged.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\IntCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\IntSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\ObjectCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\StringChanged.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\StringCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\StringContains.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Logic\StringSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\GetMaterial.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\GetMaterialTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetMaterial.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetMaterialColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetMaterialFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetMaterialMovieTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetMaterialTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetRandomMaterial.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetTextureOffset.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetTextureScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Material\SetVisibility.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\BoolFlip.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatAbs.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatAddMultiple.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatClamp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatDivide.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatInterpolate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatMultiply.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatOperator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\FloatSubtract.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\IntAdd.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\IntClamp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\IntOperator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\RandomBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\RandomFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\RandomInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\SampleCurve.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\SetBoolValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\SetFloatValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\SetIntFromFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Math\SetIntValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Mesh\GetVertexCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Mesh\GetVertexPosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Movie\MovieTextureAudioSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Movie\PauseMovieTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Movie\PlayMovieTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Movie\StopMovieTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerClearHostList.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerGetHostCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerGetHostData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerGetNextHostData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerGetProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerRegisterHost.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerRequestHostList.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerSetProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\MasterServerUnregisterHost.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkCloseConnection.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkConnect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkDestroy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkDisconnect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetAveragePing.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetConnectedPlayerProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetConnectionsCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetIsMessageQueueRunning.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetLastPing.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetLocalPlayerProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetMaximumConnections.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetMessagePlayerProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetMinimumAllocatableViewIDs.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetNetworkDisconnectionInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetNetworkErrorInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetNextConnectedPlayerProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetSendRate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkGetTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkHavePublicIpAddress.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkInitializeServer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkInstantiate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkIsClient.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkIsServer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkPeerTypeSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetIsMessageQueueRunning.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetLevelPrefix.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetLogLevel.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetMaxConnections.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetMinimumAllocatableViewIDs.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkSetSendRate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkViewGetIsMine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkViewGetViewId.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\NetworkViewRemoveRPCs.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\PlayMakerRPCProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\SendRemoteEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\SendRemoteEventByProxy.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Network\StartServer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\AddExplosionForce.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\AddForce.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\AddTorque.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\CollisionEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\Explosion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetCollisionInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetJointBreakInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetMass.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetParticleCollisionInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetRaycastAllInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetRaycastHitInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetSpeed.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetTriggerInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\GetVelocity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\IsKinematic.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\IsSleeping.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\Raycast.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\RaycastAll.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetDrag.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetGravity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetIsKinematic.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetJointConnectedBody.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetMass.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\SetVelocity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\Sleep.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\TriggerEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\UseGravity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\WakeAllRigidBodies.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics\WakeUp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\AddForce2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\AddRelativeForce2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\AddTorque2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\Collision2dEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetCollision2dInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetJointBreak2dInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetMass2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetNextLineCast2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetNextOverlapArea2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetNextOverlapCircle2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetNextOverlapPoint2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetNextRayCast2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetRayCastHit2dInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetSpeed2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetTrigger2dInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\GetVelocity2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\IsFixedAngle2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\IsKinematic2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\IsSleeping2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\LineCast2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\LookAt2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\LookAt2dGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\MousePick2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\MousePick2dEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\RayCast2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\ScreenPick2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetCollider2dIsTrigger.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetGravity2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetGravity2dScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetHingeJoint2dProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetIsFixedAngle2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetIsKinematic2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetMass2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetVelocity2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SetWheelJoint2dProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\Sleep2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\SmoothLookAt2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\Touch Object 2d Event.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\Trigger2dEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\WakeAllRigidBodies2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Physics2D\WakeUp2d.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsDeleteAll.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsDeleteKey.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsGetFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsGetInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsGetString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsHasKey.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsSetFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsSetInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\PlayerPrefs\PlayerPrefsSetString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\RebuildTextures.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\SetProceduralBoolean.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\SetProceduralColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\SetProceduralFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\SetProceduralVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ProceduralMaterial\SetProceduralVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\GetQuaternionEulerAngles.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\GetQuaternionFromRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\GetQuaternionMultipliedByQuaternion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\GetQuaternionMultipliedByVector.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionAngleAxis.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionBaseAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionCompare.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionEuler.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionInverse.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionLerp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionLookRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionLowPassFilter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionRotateTowards.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Quaternion\QuaternionSlerp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Rect\GetRectFields.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Rect\RectContains.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Rect\RectOverlaps.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Rect\SetRectFields.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Rect\SetRectValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\EnableFog.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetAmbientLight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetFlareStrength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetFogColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetFogDensity.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetHaloStrength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\RenderSettings\SetSkybox.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\AllowSceneActivation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\CreateScene.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneActivateChangedEventData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneBuildIndex.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneCountInBuildSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneIsDirty.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneIsLoaded.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneIsValid.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneLoadedEventData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetScenePath.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneProperties.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneRootCount.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneRootGameObjects.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\GetSceneUnLoadedEventData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\Internal\GetSceneActionBase.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\LoadScene.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\LoadSceneAsynch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\MergeScenes.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\MoveGameObjectToScene.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\SendActiveSceneChangedEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\SendSceneLoadedEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\SendSceneUnLoadedEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\SetActiveScene.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\UnloadScene.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\SceneManager\UnloadSceneAsynch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\AddScript.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\AxisEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\CallMethod.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\CallStaticMethod.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\EnableBehaviour.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\InvokeMethod.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\SendMessage.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\ScriptControl\StartCoroutine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\BaseFsmVariableAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\BaseFsmVariableIndexAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\BroadcastEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\EnableFSM.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\FinishFSM.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\ForwardAllEvents.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\ForwardEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetEventInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmEnum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmMaterial.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmQuaternion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmRect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmState.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmVariable.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmVariables.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetFsmVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetLastEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GetPreviousStateName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\GotoPreviousState.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\KillDelayedEvents.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\NextFrameEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\RandomEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\RunFSM.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\RunFSMAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SendEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SendEventByName.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SendEventToFsm.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SendRandomEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SequenceEvent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetEventData.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetEventTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmBool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmColor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmEnum.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmFloat.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmGameObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmInt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmMaterial.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmQuaternion.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmRect.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmTexture.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmVariable.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\StateMachine\SetFsmVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\BuildString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\FormatString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\GetStringLeft.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\GetStringLength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\GetStringRight.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\GetSubstring.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\SelectRandomString.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\SetStringValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\StringJoin.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\StringReplace.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\String\StringSplit.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\TestAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\GetSystemDateTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\GetTimeInfo.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\PerSecond.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\RandomWait.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\ScaleTime.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Time\Wait.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\GetAngleToTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\GetPosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\GetRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\GetScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\InterpolateTransform.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\InverseTransformDirection.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\InverseTransformPoint.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\LookAt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\MoveObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\MovePosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\MoveTowards.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\Rotate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SetPosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SetRandomRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SetRotation.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SetScale.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SmoothFollowAction.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SmoothLookAt.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\SmoothLookAtDirection.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\TransformDirection.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\TransformPoint.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Transform\Translate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetACosine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetASine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetAtan.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetAtan2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetAtan2FromVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetAtan2FromVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetCosine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetSine.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Trigonometry\GetTan.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\UnityObject\GetComponent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\UnityObject\GetProperty.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\UnityObject\SetObjectValue.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\UnityObject\SetProperty.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\DebugVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\GetVector2Length.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\GetVector2XY.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\SelectRandomVector2.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\SetVector2Value.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\SetVector2XY.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Add.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2AddXY.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2ClampMagnitude.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2HighPassFilter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Interpolate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Invert.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Lerp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2LowPassFilter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2MoveTowards.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Multiply.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Normalize.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Operator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2PerSecond.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2RotateTowards.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector2\Vector2Substract.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\GetVector3XYZ.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\GetVectorLength.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\SelectRandomVector3.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\SetHandsPosition.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\SetVector3Value.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\SetVector3XYZ.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Add.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3AddXYZ.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3ClampMagnitude.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3HighPassFilter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Interpolate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Invert.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Lerp.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3LowPassFilter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Multiply.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Normalize.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Operator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3PerSecond.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3RotateTowards.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Vector3\Vector3Subtract.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\Actions\Web\WWWObject.cs" />
+    <Compile Include="Assets\3rdPartyAssets\PlayMaker\UpdateHelper.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Scripts\JustAPixel\uGui\RadialLayout.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Scripts\uGui\BoxCollider2dMatchRectTransform.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Scripts\uGui\InputNavigator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\__internal\FsmStateActionAdvanced.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Application\ApplicationOpenUrl.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Camera\SetCameraOrthoSize.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Input\MousePickEvent2.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Input\MousePickEventCustom.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformContainsScreenPoint.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformFlipLayoutAxes.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetAnchoredPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetAnchorMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetAnchorMin.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetAnchorMinAndMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetLocalPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetLocalRotation.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetOffsetMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetOffsetMin.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetPivot.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetRect.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformGetSizeDelta.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformPixelAdjustPoint.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformPixelAdjustRect.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformScreenPointToLocalPointInRectangle.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformScreenPointToWorldPointInRectangle.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetAnchoredPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetAnchorMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetAnchorMin.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetAnchorMinAndMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetAnchorRectPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetLocalPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetLocalRotation.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetOffsetMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetOffsetMin.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetPivot.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformSetSizeDelta.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\RectTransform\RectTransformWorldToScreenPoint.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProAutoSizeText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProAutoSizeTextContainer.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProExtraPadding.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProKerning.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProOverrideTags.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\enableTextmeshProWrappingAndOverflow.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\setTextmeshProFontMaterialPreset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\setTextmeshProMargins.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\setTextmeshProSpacingOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\setTextmeshProUvMappingOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Advanced\setTextmeshSortingLayer.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\enableTextmeshProFontAsset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\enableTextmeshProTextColorGradient.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\getTextmeshProText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProFontSize.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProFontStyle.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProGradientPreset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProTextAlignment.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProTextColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Basic\setTextmeshProTextColorGradient.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesBevel.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesBumpmap.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesEnvMap.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesFace.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesGlow.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesLighting.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesOutline.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\actions\Shaders\setTextmeshProShaderPropertiesUnderlay.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIAutoSizeText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIAutoSizeTextContainer.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIExtraPadding.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIKerning.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIOverrideTags.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\enableTextmeshProUGUIWrappingAndOverflow.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\setTextmeshProUGUIFontMaterialPreset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\setTextmeshProUGUIMargins.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\setTextmeshProUGUISortingLayer.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\setTextmeshProUGUISpacingOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Advanced\setTextmeshProUGUIUvMappingOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\enableTextmeshProUGUIFontAsset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\enableTextmeshProUGUITextColorGradient.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\getTextmeshProInputText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\getTextmeshProUGUIText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProInputText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUIFontSize.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUIFontStyle.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUIGradientPreset.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUIText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUITextAlignment.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUITextColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Basic\setTextmeshProUGUITextColorGradient.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesBevel.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesBumpmap.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesEnvMap.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesFace.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesGlow.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesLighting.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesOutline.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesUnderlay.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Transform\SetTransformParent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasEnableRaycastFilter.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasForceUpdateCanvases.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasGroupSetAlpha.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasGroupSetProperties.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasScalerGetScaleFactor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasScalerSetScaleFactor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\EventSystemCurrentRayCastAll.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\EventSystemExecuteEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\GetLastPointerDataInfo.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\GetLastPointerEventDataInputButton.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\IsPointerOverUiObject.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiGetSelectedGameObject.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnBeginDragEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnCancelEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnDeselectEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnDragEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnDropEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnEndDragEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnInitializePotentialDragEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnMoveEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnPointerClickEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnPointerDownEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnPointerEnterEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnPointerExitEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnPointerUpEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnScrollEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnSelectEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnSubmitEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiOnUpdateSelectedEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\EventSystem\uGuiSetSelectedGameObject.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Layout\uGuiLayoutElementGetValues.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Layout\uGuiLayoutElementSetValues.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Layout\uGuiRadialLayoutSetProperties.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiExplicitNavigationGetProperties.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiExplicitNavigationSetProperties.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiGetBlockColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiGetIsInteractable.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiNavigationGetMode.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiNavigationSetMode.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiSetAnimationTriggers.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiSetBlockColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiSetIsInteractable.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiTransitionGetType.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Selectable\uGuiTransitionSetType.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiButtonOnClickEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiDropDownAddOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiDropDownClearOptions.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiDropDownGetSelectedData.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiDropDownSetValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiGraphicCrossFadeAlpha.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiGraphicCrossFadeColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiGraphicGetColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiGraphicSetColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutChildAlignment.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutSetCellSize.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutSetConstraint.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutSetPadding.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutSetSpacing.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutStartAxis.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UGuiGridLayoutStartCorner.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiImageGetFillAmount.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiImageGetSprite.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiImageSetFillAmount.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiImageSetSprite.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldActivate.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldDeactivate.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetCaretBlinkRate.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetCharacterLimit.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetHideMobileInput.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetIsFocused.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetPlaceHolder.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetSelectionColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetTextAsFloat.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetTextAsInt.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldGetWasCanceled.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldMoveCaretToTextEnd.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldMoveCaretToTextStart.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldOnEndEditEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldOnSubmitEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldOnValueChangeEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldScreenToLocal.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetAsterixChar.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetCaretBlinkRate.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetCharacterLimit.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetHideMobileInput.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetPlaceHolder.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetSelectionColor.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiInputFieldSetText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiRawImageSetTexture.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiRebuild.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarGetDirection.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarGetValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarOnValueChangedEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarSetDirection.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarSetNumberofSteps.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarSetSize.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollbarSetValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollRectGoToItem.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollRectSetHorizontal.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollRectSetNormalizedPosition.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiScrollRectSetVertical.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderGetDirection.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderGetMinMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderGetNormalizedValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderGetValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderGetWholeNumbers.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderOnValueChangedEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderSetDirection.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderSetMinMax.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderSetNormalizedValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderSetValue.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiSliderSetWholeNumbers.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiTextGetText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiTextSetFont.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiTextSetText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiToggleGetIsOn.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiToggleOnValueChangedEvent.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiToggleSetIsOn.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\UguiUiToWorldPoint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\3rdPartyAssets\PlayMaker Utils\External Libraries\Rotorz\Reorderable List Field\LICENSE.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker Utils\External Libraries\Rotorz\Reorderable List Field\README.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker\Editor\Install\readme.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker\Readme.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker\Templates\readme.txt" />
+    <None Include="Assets\3rdPartyAssets\PlayMaker\Versions\readme.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\3rdPartyAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\3rdPartyAssets\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\PlayMaker Custom Actions\TextMeshPro_Playmaker\license.txt" />
+    <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\README.txt" />
+    <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\VolcanicGuiSkin\ReadMeForCredits.txt" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageDetails.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageGroup.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageItem.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Unity.PackageManagerUI.Editor.asmdef" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Tests\Editor\Unity.PackageManagerUI.EditorTests.asmdef" />
+    <None Include="C:\Users\digim\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.13\Editor\Editor.asmdef" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
