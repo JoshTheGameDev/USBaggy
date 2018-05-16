@@ -1,65 +1,42 @@
 fileFormatVersion: 2
-guid: c0efbaf2a7ec14c4abefd8f6333191c1
+guid: 81fd2e9c4a3a3b1479a30f5d76204eeb
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: m_Bag
-    100004: m_Zipper_L
-    100006: m_Zipper_Lower
-    100008: m_Zipper_Main
-    100010: m_Zipper_Mid
-    100012: m_Zipper_R
+    100002: m_FrontPocket_H
+    100004: m_Mid_H
+    100006: m_Pocket_L_H
+    100008: m_Pocket_R_H
+    100010: m_Top_H
     400000: //RootNode
-    400002: m_Bag
-    400004: m_Zipper_L
-    400006: m_Zipper_Lower
-    400008: m_Zipper_Main
-    400010: m_Zipper_Mid
-    400012: m_Zipper_R
-    2100000: mat_Zipper
-    2100002: mat_Zips
-    2100004: mat_Bag
-    2100006: mat_BagExtras
-    2300000: m_Bag
-    2300002: m_Zipper_L
-    2300004: m_Zipper_Lower
-    2300006: m_Zipper_Main
-    2300008: m_Zipper_Mid
-    2300010: m_Zipper_R
-    3300000: m_Bag
-    3300002: m_Zipper_L
-    3300004: m_Zipper_Lower
-    3300006: m_Zipper_Main
-    3300008: m_Zipper_Mid
-    3300010: m_Zipper_R
-    4300000: m_Zipper_Main
-    4300002: m_Zipper_Mid
-    4300004: m_Zipper_Lower
-    4300006: m_Zipper_L
-    4300008: m_Zipper_R
-    4300010: m_Bag
+    400002: m_FrontPocket_H
+    400004: m_Mid_H
+    400006: m_Pocket_L_H
+    400008: m_Pocket_R_H
+    400010: m_Top_H
+    2100000: mat_Highlight
+    2300000: m_FrontPocket_H
+    2300002: m_Mid_H
+    2300004: m_Pocket_L_H
+    2300006: m_Pocket_R_H
+    2300008: m_Top_H
+    3300000: m_FrontPocket_H
+    3300002: m_Mid_H
+    3300004: m_Pocket_L_H
+    3300006: m_Pocket_R_H
+    3300008: m_Top_H
+    4300000: m_Top_H
+    4300002: m_Pocket_L_H
+    4300004: m_Pocket_R_H
+    4300006: m_FrontPocket_H
+    4300008: m_Mid_H
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_Bag
-    second: {fileID: 2100000, guid: f8d1efd2ad9959b4fac0b025dc3b9ff8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_BagExtras
-    second: {fileID: 2100000, guid: fdaddc65ed2f4464e9b2377c249abd69, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_Zipper
-    second: {fileID: 2100000, guid: 3550defba7677fd45b118a0c04a99ae6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_Zips
-    second: {fileID: 2100000, guid: 306b837199575fc49ac6ca0dc045e278, type: 2}
+      name: mat_Highlight
+    second: {fileID: 2100000, guid: 04b070f134d3cc04caaf2b01156340f7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -115,7 +92,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
