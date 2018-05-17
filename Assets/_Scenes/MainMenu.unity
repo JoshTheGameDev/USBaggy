@@ -435,14 +435,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.uGuiButtonOnClickEvent
         - HutongGames.PlayMaker.Actions.uGuiButtonOnClickEvent
         - HutongGames.PlayMaker.Actions.uGuiButtonOnClickEvent
+        - HutongGames.PlayMaker.Actions.SetRotation
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000200000004000000
-        actionHashCodes: 86dace0186dace0186dace01
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000020000000400000006000000
+        actionHashCodes: 86dace0186dace0186dace01979e4104
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -470,6 +472,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1496973262}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 178164736}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -481,24 +491,54 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
-        fsmQuaternionParams: []
+        fsmQuaternionParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0, w: 0}
         stringParams:
         - Transition
         - LoadCredits
         - APPLICATION QUIT
-        byteData: 
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001700000014000000170000001400000017000000
+        paramDataType: 14000000170000001400000017000000140000001700000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
         - gameObject
         - sendEvent
@@ -506,8 +546,17 @@ MonoBehaviour:
         - sendEvent
         - gameObject
         - sendEvent
-        paramDataPos: 000000000000000001000000010000000200000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000
+        - gameObject
+        - quaternion
+        - vector
+        - xAngle
+        - yAngle
+        - zAngle
+        - space
+        - everyFrame
+        - lateUpdate
+        paramDataPos: 000000000000000001000000010000000200000002000000030000000000000000000000000000000100000002000000000000000400000005000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000100000001000000
     - name: Quit
       description: 
       colorIndex: 0
@@ -1726,7 +1775,7 @@ MonoBehaviour:
         - RotateRight
         - ResetPos
         - ResetPos
-        byteData: 1b000000110100001201000014010000130100000d00000020000000
+        byteData: 71000000110100001201000014010000130100000d00000020000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -2968,7 +3017,7 @@ MonoBehaviour:
         - LoadCredits
         - APPLICATION QUIT
         - ExitMainScene
-        byteData: 1b000000
+        byteData: 71000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -7908,7 +7957,6 @@ GameObject:
   - component: {fileID: 607881561}
   - component: {fileID: 607881564}
   - component: {fileID: 607881563}
-  - component: {fileID: 607881562}
   m_Layer: 0
   m_Name: Dim
   m_TagString: Untagged
@@ -7929,20 +7977,6 @@ Transform:
   m_Father: {fileID: 1911270828}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!64 &607881562
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 607881560}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &607881563
 MeshRenderer:
   m_ObjectHideFlags: 0
